@@ -1,0 +1,75 @@
+/* Navbar Styles */
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.search-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.form-control {
+  width: 200px; /* Adjust the width as needed */
+}
+
+.search-icon {
+  margin-left: 0.5rem;
+  font-size: 1.2rem; /* Adjust size if needed */
+}
+
+
+/* Carousel Styles */
+.carousel-item img {
+  object-fit: contain;
+  height: 500px; /* Adjust as needed */
+}
+
+/* Description Box Styles */
+.description-box {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin: 1rem;
+}
+
+.description-text {
+  margin-top: 0.5rem;
+}
+
+/* Profile Section Styles */
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  object-fit: contain;
+}
+
+.phone-number {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
