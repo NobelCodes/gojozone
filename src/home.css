@@ -30,6 +30,7 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .poster-img {
@@ -50,8 +51,12 @@
 }
 
 .poster-price {
-    color: green;
-    font-size: 1.1rem;
+    color: #00b53f;
+    font-family: Helvetica Neue;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none solid rgb(0, 181, 63);
+
 }
 
 @media (max-width: 767px) {

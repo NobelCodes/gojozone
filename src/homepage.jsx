@@ -1,19 +1,16 @@
+import PageOne from "./pageone.jsx";
+import PageTwo from "./pagetwo.jsx";
+import Home from './home.jsx'
+import App from "./demo.jsx"
 
-import PageOne from "./pageone.jsx"
-import PageTwo from "./pagetwo.jsx"
-import ReactDOM from 'react-dom/client';
-import { StrictMode,React } from 'react'
-import { createRoot } from 'react-dom/client'
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
-function HomePage(){
-
-	return(
-	 <Routes>
-            <Route path="/" element={<PageOne />} />
-            <Route path="/pagetwo" element={<PageTwo />} />
-            
-         </Routes>
-	)
+function HomePage() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/buy" element={<App />} />
+    </Routes>
+  );
 }
 export default HomePage;

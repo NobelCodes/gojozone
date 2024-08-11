@@ -1,8 +1,9 @@
 import React from 'react';
 import p1 from './assets/MYPIC.jpg'
 import './home.css';
+import { useNavigate, NavLink } from 'react-router-dom';
+function Home() {
 
-function App() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -10,88 +11,93 @@ function App() {
         <div className="ml-auto">
           <form className="form-inline">
             <a href="https://www.google.com" className="search-link">
-              <input
+              <input 
                 className="form-control mr-sm-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
               <span className="search-icon">&#128269;</span>
-            </a>
+            </a> 
           </form>
         </div>
       </nav>
 
       <div className="container mt-4">
-        <h1>Home</h1>
+        
         <div className="row">
+
+        <Poster
+            imageUrl={p1}
+            title="Sample Title That Exceeds 28 Characters"
+            price="ETB 200,000"
+            id="postingBox"
+          />
           <Poster
             imageUrl={p1}
             title="Sample Title That Exceeds 28 Characters"
-            price="$99.99"
+            price="ETB 200,000"
+            id="postingBox"
           />
           <Poster
             imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
+            title="Sample Title That Exceeds 28 Characters"
+            price="ETB 200,000"
+            id="postingBox"
           />
           <Poster
             imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
+            title="Sample Title That Exceeds 28 Characters"
+            price="ETB 200,000"
+            id="postingBox"
           />
           <Poster
             imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
+            title="Sample Title That Exceeds 28 Characters"
+            price="ETB 200,000"
+            id="postingBox"
           />
           <Poster
             imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
+            title="Sample Title That Exceeds 28 Characters"
+            price="ETB 200,000"
+            id="postingBox"
           />
           <Poster
             imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
+            title="Sample Title That Exceeds 28 Characters"
+            price="ETB 200,000"
+            id="postingBox"
           />
           <Poster
             imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
+            title="Sample Title That Exceeds 28 Characters"
+            price="ETB 200,000"
+            id="postingBox"
           />
           <Poster
             imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
+            title="Sample Title That Exceeds 28 Characters"
+            price="ETB 200,000"
+            id="postingBox"
           />
           <Poster
             imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
+            title="Sample Title That Exceeds 28 Characters"
+            price="ETB 200,000"
+            id="postingBox"
           />
           <Poster
             imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
+            title="Sample Title That Exceeds 28 Characters"
+            price="ETB 200,000"
+            id="postingBox"
           />
           
+   
+          
+          
+
           {/* Add more <Poster /> components as needed */}
         </div>
       </div>
@@ -106,6 +112,7 @@ function Poster({ imageUrl, title, price }) {
   };
 
   return (
+    <NavLink to="/buy" style={{textDecoration: 'none'}}>
     <div className="col-md-4 mb-4">
       <div className="poster">
         <img src={imageUrl} alt="Poster" className="poster-img" />
@@ -115,7 +122,8 @@ function Poster({ imageUrl, title, price }) {
         </div>
       </div>
     </div>
+    </NavLink>
   );
 }
 
-export default App;
+export default Home;

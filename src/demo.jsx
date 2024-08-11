@@ -71,7 +71,7 @@ function App() {
       <div class="property-grid">
     <div class="propertyofitem">
         <div class="title">kera beret</div>
-        <div class="description">PROPERTY ADDRESS</div>
+        <div class="description">PROPERTY ADDRESS</div>  
     </div>
     <div class="propertyofitem">
         <div class="title">72 m<sup>2</sup></div>
@@ -87,7 +87,7 @@ function App() {
     </div>
     <div class="propertyofitem">
         <div class="title">owner</div>
-        <div class="description">PROPERTY LISTER</div>
+        <div cl ass="description">PROPERTY LISTER</div>
     </div>
     
 </div>
