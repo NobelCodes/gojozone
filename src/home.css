@@ -30,7 +30,6 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
 
 .poster-img {
@@ -56,7 +55,6 @@
     font-weight: 700;
     font-size: 18px;
     text-decoration: none solid rgb(0, 181, 63);
-
 }
 
 @media (max-width: 767px) {

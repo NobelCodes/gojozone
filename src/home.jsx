@@ -3,7 +3,6 @@ import p1 from './assets/MYPIC.jpg'
 import './home.css';
 import { useNavigate, NavLink } from 'react-router-dom';
 function Home() {
-
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -11,93 +10,87 @@ function Home() {
         <div className="ml-auto">
           <form className="form-inline">
             <a href="https://www.google.com" className="search-link">
-              <input 
+              <input
                 className="form-control mr-sm-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
               <span className="search-icon">&#128269;</span>
-            </a> 
+            </a>
           </form>
         </div>
       </nav>
 
       <div className="container mt-4">
-        
         <div className="row">
+          <Poster
+            imageUrl={p1}
+            title="Sample Title That Exceeds 28 Characters"
+            price="$99.99"
+          />
+          <Poster
+            imageUrl={p1}
+            title="Short Title"
+            price="$49.99"
+          />
+          <Poster
+            imageUrl={p1}
+            title="Short Title"
+            price="$49.99"
+          />
+          <Poster
+            imageUrl={p1}
+            title="Short Title"
+            price="$49.99"
+          />
+          <Poster
+            imageUrl={p1}
+            title="Short Title"
+            price="$49.99"
+          />
 
-        <Poster
+          <Poster
             imageUrl={p1}
-            title="Sample Title That Exceeds 28 Characters"
-            price="ETB 200,000"
-            id="postingBox"
+            title="Short Title"
+            price="$49.99"
           />
           <Poster
             imageUrl={p1}
-            title="Sample Title That Exceeds 28 Characters"
-            price="ETB 200,000"
-            id="postingBox"
+            title="Short Title"
+            price="$49.99"
           />
           <Poster
             imageUrl={p1}
-            title="Sample Title That Exceeds 28 Characters"
-            price="ETB 200,000"
-            id="postingBox"
+            title="Short Title"
+            price="$49.99"
           />
           <Poster
             imageUrl={p1}
-            title="Sample Title That Exceeds 28 Characters"
-            price="ETB 200,000"
-            id="postingBox"
+            title="Short Title"
+            price="$49.99"
           />
           <Poster
             imageUrl={p1}
-            title="Sample Title That Exceeds 28 Characters"
-            price="ETB 200,000"
-            id="postingBox"
+            title="Short Title"
+            price="$49.99"
           />
           <Poster
             imageUrl={p1}
-            title="Sample Title That Exceeds 28 Characters"
-            price="ETB 200,000"
-            id="postingBox"
+            title="Short Title"
+            price="$49.99"
           />
           <Poster
             imageUrl={p1}
-            title="Sample Title That Exceeds 28 Characters"
-            price="ETB 200,000"
-            id="postingBox"
+            title="Short Title"
+            price="$49.99"
           />
           <Poster
             imageUrl={p1}
-            title="Sample Title That Exceeds 28 Characters"
-            price="ETB 200,000"
-            id="postingBox"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Sample Title That Exceeds 28 Characters"
-            price="ETB 200,000"
-            id="postingBox"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Sample Title That Exceeds 28 Characters"
-            price="ETB 200,000"
-            id="postingBox"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Sample Title That Exceeds 28 Characters"
-            price="ETB 200,000"
-            id="postingBox"
+            title="Short Title"
+            price="$49.99"
           />
           
-   
-          
-          
-
           {/* Add more <Poster /> components as needed */}
         </div>
       </div>
