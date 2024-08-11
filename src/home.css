@@ -1,0 +1,61 @@
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.search-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.form-control {
+    width: 200px;
+}
+
+.search-icon {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.poster {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.poster-img {
+    width: 100%;
+    height: auto;
+}
+
+.poster-content {
+    padding: 1rem;
+}
+
+.poster-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.poster-price {
+    color: green;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 767px) {
+    .poster-title {
+        font-size: 1rem;
+    }
+}
