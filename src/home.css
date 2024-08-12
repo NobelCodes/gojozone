@@ -1,64 +1,41 @@
-.navbar {
-    padding: 0.5rem 1rem;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-}
-
-.ml-auto {
-    margin-left: auto;
-}
-
+/* Navbar search link */
 .search-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+  text-decoration: none;
+  color: inherit;
 }
 
-.form-control {
-    width: 200px;
+/* Remove underline for NavLink */
+.card-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-.search-icon {
-    margin-left: 0.5rem;
-    font-size: 1.2rem;
+.card {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.poster {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.card-img-top {
+  width: 100%;
+  height: auto;
 }
 
-.poster-img {
-    width: 100%;
-    height: auto;
+.card-body {
+  padding: 1rem;
 }
 
-.poster-content {
-    padding: 1rem;
+.card-title {
+  font-size: 1.25rem;
 }
 
-.poster-title {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.price {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: green;
 }
 
-.poster-price {
-    color: #00b53f;
-    font-family: Helvetica Neue;
-    font-weight: 700;
-    font-size: 18px;
-    text-decoration: none solid rgb(0, 181, 63);
-}
-
-@media (max-width: 767px) {
-    .poster-title {
-        font-size: 1rem;
-    }
+.card:hover {
+  transform: scale(1.05);
 }

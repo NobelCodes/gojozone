@@ -1,8 +1,9 @@
 import React from 'react';
-import p1 from './assets/MYPIC.jpg'
-import './home.css';
-import { useNavigate, NavLink } from 'react-router-dom';
-function Home() {
+import { NavLink } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Home.css'; // For custom styles
+
+function Home({ cardData }) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -22,99 +23,36 @@ function Home() {
         </div>
       </nav>
 
-      <div className="container mt-4">
+      <div className="container my-4">
         <div className="row">
-          <Poster
-            imageUrl={p1}
-            title="Sample Title That Exceeds 28 Characters"
-            price="$99.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          <Poster
-            imageUrl={p1}
-            title="Short Title"
-            price="$49.99"
-          />
-          
-          {/* Add more <Poster /> components as needed */}
+          {cardData.map((data, index) => (
+            <div className="col-md-3 mb-4" key={index}>
+              <Card index={index} title={data.title} price={data.price} imageSrc={data.imageSrc} />
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 }
 
-function Poster({ imageUrl, title, price }) {
-  // Function to truncate title if it exceeds 28 characters
-  const truncateTitle = (str) => {
-    return str.length > 28 ? str.substring(0, 28) + "..." : str;
-  };
+function Card({ index, title, price, imageSrc }) {
+  // Truncate title if it's longer than 26 characters
+  const truncatedTitle = title.length > 26 ? title.substring(0, 26) + '...' : title;
 
   return (
-    <NavLink to="/buy" style={{textDecoration: 'none'}}>
-    <div className="col-md-4 mb-4">
-      <div className="poster">
-        <img src={imageUrl} alt="Poster" className="poster-img" />
-        <div className="poster-content">
-          <h5 className="poster-title">{truncateTitle(title)}</h5>
-          <p className="poster-price">{price}</p>
+    <NavLink to={`/buy/${index}`} className="card-link">
+      <div className="card">
+        <img
+          src={imageSrc}
+          className="card-img-top"
+          alt="Card Image"
+        />
+        <div className="card-body">
+          <h5 className="card-title">{truncatedTitle}</h5>
+          <p className="card-text price">{price}</p>
         </div>
       </div>
-    </div>
     </NavLink>
   );
 }

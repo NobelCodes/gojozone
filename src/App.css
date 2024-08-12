@@ -1,0 +1,335 @@
+/* Navbar Styles */
+@media screen and (min-width: 800px) {
+
+.navbar {
+  padding: 0.5rem 1rem;
+
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.search-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.form-control {
+  width: 200px; /* Adjust the width as needed */
+}
+
+.search-icon {
+  margin-left: 0.5rem;
+  font-size: 1.2rem; /* Adjust size if needed */
+}
+
+
+/* Carousel Styles */
+.carousel-item img {
+  object-fit: contain;
+  height: 500px; /* Adjust as needed */
+}
+
+/* Description Box Styles */
+.description-box {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin: 1rem;
+  background-color: white;
+  
+
+}
+
+.description-text {
+  margin-top: 0.5rem;
+}
+
+/* Profile Section Styles */
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  object-fit: contain;
+}
+
+.phone-number {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+.bed-image {
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+}
+.container{
+  background-color: white;
+
+}
+.scroll-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.scroll-content {
+    display: flex; /* Align items horizontally */
+    gap: 30px; /* Space between items */
+}
+
+.item {
+    display: inline-block;
+    text-align: center;
+}
+
+.bed-image {
+    width: 55px;
+    height: 55px;
+    border: 2px solid white;
+    border-radius: 20%;
+    object-fit: contain;
+
+}
+
+.carousel-control-prev-icon {
+    background-color: silver; /* Red color */
+}
+
+/* Change color of next arrow */
+.carousel-control-next-icon {
+    background-color: silver; /* Green color */
+}
+.App{
+  background-color: #ebf2f7;
+}
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px; /* Space between items */
+    max-width: 100%; /* Ensure the grid container fits within its parent */
+}
+
+.propertyofitem {
+    padding: 10px; /* Optional: Add padding */
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+.title {
+    font-size: 20px;
+    line-height: 15px;
+    color: black; /* Pure black */
+    margin-bottom: 5px; /* Space between title and description */
+}
+
+.description {
+    font-size: 15px;
+    line-height: 10px;
+    color: #6c8ea0; /* Specific color code */
+    height: 36px; /* Limit height to fit approximately 3 lines */
+    overflow: hidden;
+}
+
+/* Ensure exactly 2 rows */
+.property-grid::after {
+    content: "";
+    grid-column: span 3; /* Span across all columns */
+    display: block;
+}
+}
+@media screen and (max-width: 800px) {
+  /* Navbar Styles */
+.navbar {
+  padding: 0.5rem 1rem;
+
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.search-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.form-control {
+  width: 200px; /* Adjust the width as needed */
+}
+
+.search-icon {
+  margin-left: 0.5rem;
+  font-size: 1.2rem; /* Adjust size if needed */
+}
+
+
+/* Carousel Styles */
+.carousel-item img {
+  object-fit: contain;
+  height: 500px; /* Adjust as needed */
+}
+
+/* Description Box Styles */
+.description-box {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin: 1rem;
+  background-color: white;
+  
+
+}
+
+.description-text {
+  margin-top: 0.5rem;
+  max-width: 50%;
+}
+
+/* Profile Section Styles */
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 70%;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.phone-number {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+.bed-image {
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+}
+.container{
+  background-color: white;
+
+}
+.scroll-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.scroll-content {
+    display: flex; /* Align items horizontally */
+    gap: 30px; /* Space between items */
+}
+
+.item {
+    display: inline-block;
+    text-align: center;
+}
+
+.bed-image {
+    width: 55px;
+    height: 55px;
+    border: 2px solid white;
+    border-radius: 20%;
+    object-fit: contain;
+
+}
+
+.carousel-control-prev-icon {
+    background-color: silver; /* Red color */
+}
+
+/* Change color of next arrow */
+.carousel-control-next-icon {
+    background-color: silver; /* Green color */
+}
+.App{
+  background-color: #ebf2f7;
+}
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px; /* Space between items */
+    max-width: 100%; /* Ensure the grid container fits within its parent */
+}
+
+.propertyofitem {
+    padding: 10px; /* Optional: Add padding */
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+.title {
+    font-size: 15px;
+    line-height: 15px;
+    color: black; /* Pure black */
+    margin-bottom: 5px; /* Space between title and description */
+}
+
+.description {
+    font-size: 10px;
+    line-height: 15px;
+    color: #6c8ea0; /* Specific color code */
+    height: 36px; /* Limit height to fit approximately 3 lines */
+    overflow: hidden;
+}
+
+/* Ensure exactly 2 rows */
+.property-grid::after {
+    content: "";
+    grid-column: span 3; /* Span across all columns */
+    display: block;
+}
+.description-text {
+    max-width: 100%; /* Ensure it doesn't exceed the width of its parent */
+    overflow: hidden; /* Hide anything that overflows */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.description-text-box {
+    width: 100%; /* Make sure it takes up the full width of the parent */
+    word-wrap: break-word; /* Break long words to avoid overflow */
+    overflow-wrap: break-word; /* Alternative to word-wrap */
+}
+
+.description-text p {
+    margin: 0; /* Remove default margin to prevent extra spacing issues */
+}
+
+
+}
