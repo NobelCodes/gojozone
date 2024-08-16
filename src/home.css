@@ -18,8 +18,9 @@
 }
 
 .card-img-top {
-  width: 100%;
-  height: auto;
+  width: auto; /* Maintain the aspect ratio */
+  height: 250px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image covers the area, clipping the excess */
 }
 
 .card-body {
@@ -38,4 +39,14 @@
 
 .card:hover {
   transform: scale(1.05);
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: auto; /* Allow the image height to adjust */
+    max-height: 550px; /* Set a maximum height */
+    width: 100%; /* Make sure the image fills the card width */
+    object-fit: cover; /* Ensures the entire image is visible */
+  }
 }
